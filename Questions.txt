@@ -1,0 +1,90 @@
+1) why we use NPM with react ?
+==> NPM stands for Node Package Manager.It manages
+all Packages for Node which exist in node_module folder.
+Lets assume later you'll have need of using another package
+then run the command "npm install package-name".
+
+2) Is there any alternative of NPM ?
+==> Yes.
+That is "yarn" that is basically another installer,where
+NPM structure and registry is the same.
+
+3) What is the current version of React ?
+==> Answer according to your project.Now for me the answer is "18.2.0"
+
+4) Difference between "package.json" and "package-lock.json" 
+==> "package.json" :- It contains basic information about the project.
+==> "package.lock.json" : -It describes the exact tree that was generated to allow subsequent installs to have the identical tree.
+
+5) What's the most important file in a react application ?
+==> package.json.
+
+6) When we push our code folder than why node_module isn't pushed ?
+==> because,In ".gitignore" file "node_module" file's name is added.
+If any body wants to get the node_module than he should run the command
+"npm install"
+
+7) How many kinds of component is available in React-JS ?
+==> here are two types of components present such as,
+	a) Functional Component
+	b) Class Component
+and another Components are:-Not so important still go through at a glance
+	1.) Higher-order components
+	2.) Pure components
+	3.) Controlled components
+	4.) Uncontrolled components
+
+8) Can we create a component inside a component?
+==> Yes,we can but it's not a good practice.We can't
+use this outside of the outer component.
+
+9) Can we use both "React" and "Angular" in the same project" ?
+If yes, then how, and if no, then "why"?
+==> Yes, we can.Angular is Framework whereas React is a library
+and we can use it with any project we want.
+
+10) JSX ?
+==> It is nothing but syntax extention of JavaScript.
+which allows us to write HTML and JS in same file.
+
+11) Can we use JSX without React ?
+==> Yes, we can.Because it's just a syntax extention of JavaScript.
+
+12) Can you differenciate between function calling vs function reference pass ?
+==> call function with parenthesis() is function call and the other one is passing 
+reference of a function.
+If we call with () then the function is called immediately.
+
+13) If we use variable and update it later then why it doesn't make any change ?
+==> React doesn't re-render the changed variable.React only looks for "props" and
+"states" if any change is detected then React re-render it.
+
+14) can we use/access state of a component(functional) from outside of the component ?
+==> No,we can't[Hands on experience].
+
+15) which accessibility(public/private) "state" have ?
+==> public.
+
+16) Can we use useState in Class Component ?
+==> No, we can't use useState in class-component because, useState is a Hook
+ and Hooks are not implement in class-component.
+
+ 17) Can we pass a function as a props ?
+==> Yes, we can.This concept is known as "lifting state up".
+
+ 18) Can we pass html in a props of a component ? If yes than how and if not then why ?
+==> Yes,we can. By using "this.props.children"  onliy if we're using class Component.
+"this.children" for functional Component.
+
+19) If we want to make an element disable, How we can acheive that with and without
+using a button ?
+==> 
+
+20) We know that in React a Component life cycle has three phases.
+Mounting, Updating, and Unmounting.Now we have Mounted(created) a Component and then make
+some changes and then Unmounting(deleting) it.Now question is if we again load the component
+than the life cycle will restart ?
+==> Yes, it'll restart and keep in mind that the old one get destroyed.
+
+21) In the life cycle of a React component,the component has only three phases.
+But there are many methods available throughout the whole life cycle.

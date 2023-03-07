@@ -1,0 +1,229 @@
+● React is a JavaScript library. (This is not a Framework.)
+● React's main focus is to build UIs as quickly as possible.
+● React is designed to create a single-page application (SPA).
+	--> means a full website on a single page.
+● React is fast because it uses Virtual DOM.
+	==> If a website is built properly with React,
+	    it will only load once, and if any changes 
+	    are made to the source code, an algorithm 
+	    will only check for new changes and render 
+	    the specifically changed part rather than 
+	    rendering the whole page or DOM.
+
+● Famous Applications built with React:--
+	1) Netflix
+	2) Whatsapp web
+	3) Instagram
+	4) Airbnb
+
+*) What is module in JavaScript ?
+==> In JavaScript modules are such file having the
+right to communicate with other JS files.
+
+*) In which file we'll coding for HTML element with JS 
+is known as component.React components are regular 
+JavaScript functions, but their names must start with 
+a capital letter or they won’t work!
+
+	---: To create a React App :---
+*) At first access the location where you want to create a React app,
+then write the command "npx create-react-app app-name" OR "create-react-app appName" (Don't use a single
+capital character of your name)
+
+*) Difference between "npx create-react-app my-app" and "create-react-app" 
+==> 
+
+*) We do component based page in React because it becomes maintainable.
+	Like changing,updating etc.
+
+*) If we want to keep images,videos,icon freely means directly accessible then 
+keep them in "public" folder else keep them inside component folder.
+
+*) 	import myphoto from "./logo192.png";
+	<img src={myphoto}/>
+here myphoto is a variable and in react variable/constant are written in this way.
+
+*) Routing:-- The technology used to control which 
+content will be shown when event is called, is routing.
+
+*) In design function(It's user defined function) we can create only one element
+and if we want to create more than one element then 
+lock all those element in empty tag(<></> this is also known as Fragment)
+==> because React needs a parent element to be returned.
+
+*) If we want value of a const/let/function then we use
+template literal {name_of_var/function}
+
+*) If we call a function event-wise then we don't use
+parenthesis().It's known as function reference passing.
+
+*) React-Boostrap:--
+	In Boostrap we uses "class" to change color or any other attributes
+	but in React-Boostrap we'll use "varient" for the same as Boostrap.
+
+*) Topics to be covered:--
+	1.) Template
+	2.) JSON apis
+	3.) Component and Nested Component
+	4.) React properties
+	5.) React conditions
+	6.) React loops
+
+*) Template:--
+	Template pages are those that contain 
+	designs that are the same for every page.
+	
+*) Why we've used ".jsx" extention in Header files ?
+==> using JSX memory consumption is less and process very fast.
+
+*) HTML's attributes like name is known as props/properties in React.
+
+	---: File and Folder structure of a React project :---
+*) package.json is most important file,it contains details of our project,
+like:--
+	name
+	version
+	dependencies
+	commands
+	name of all those packages which are installed for the project.
+
+*) Then you may think about "package-lock.json" file which exist in same location
+==> It contains details of "package.json" file.
+
+*) We can only use "export default" for one Component.
+
+*) import and export syntax isn't the syntax of React it's from JavaScript,
+as React is library of JavaScript so we can use the same as...
+
+*) Function call v/s function reference
+==> immediate execution of function,function call(With parenthesis).
+Later execution of function reference(without parenthesis).
+
+*) When we use variable in a component and later if we change value
+of the variable then change will not effect.so we've to use state 
+to resolve this.
+
+*) State in Functional component:
+==> As we can store some data in a variable,in the same way
+we can store some data in "state".If react finds that 
+component's props(properties) or state is changed then react'll
+update.
+
+*) basics syntax of state ==>
+const [state, setState] = useState(intialState);
+		||       ||
+  state-name   method
+
+*) If component re-executes than it's known as re-rendering.
+
+*) To use state we have to import {useState} from "react",It's
+a hook* which allows us to maintain as well as update state.
+
+*) Hook in React is nothing but in-built functions.
+
+*) setState() is used to change the value of the state object.
+
+*) we use "super()" keyword to call constructor of parent class.
+
+*) State is nothing but a data container.
+
+*) In class Component we've to define state in constructor().
+
+*) state with functional component:--
+	const[name, setName]=useState("Initial value")
+*) state with class component:--
+	constructor()
+	{
+		super()
+		this.state = {
+			prop1: "value1",
+			prop2: "value2"
+		}
+	}
+	function demo()
+	{
+		// some code, for e.g
+		this.setState({prop1: "updated value"});
+	}
+
+	// always use "this" keyword to access the properties and functions
+	==> <h1>Hello!{ this.prop1 }</h1>
+	==> <button onClick={()=>{this.demo()}}>Update</button>
+
+
+*) Props with functional component:
+==> As we pass some parameters with the function when we define or call it,
+same way, when we create a component, we can also pass some data with it.
+The passed data is known as props.Props stands for properties.
+
+*) Syntax to pass data with component:
+==> <Component name={"value"} />
+	<Student name={"Robin"}/>
+	    |       |		|
+Component-name anyName value
+
+*) How to access the passed props in a Component:
+==> While defining the Component(functional) accept the props with any name,
+
+	function App(props) // here we can use any name instead of using "props"
+	{
+		return(
+			<div>
+				<h1></h1>
+			</div>
+		);
+	}
+*) Basically when we need to send some data/info from one Component to another
+Component then we need "props" .
+
+*) As we passed props to a functional component in the same way we can pass
+props to a class Component and use them in the same way.
+
+*) We can't update "props" from child Component either it's functional 
+Component or class Component.We can only change props only from parent Component.
+parent Component means the component from which we pass props.
+
+*) Collect value of user input from input-box
+==> Yes, we can. Later, we'll discuss this.
+
+*) preventDefault() is a method in React that is used to prevent 
+the default behavior of an event.For example, if you have a form 
+and you want to handle the form submission yourself instead of 
+letting the browser submit the form, you can use preventDefault() 
+to stop the default form submission behavior.	Syntax:--
+
+	function getFormData(event)
+	{
+		event.preventDefault();
+		console.log("Submission done");
+	}
+
+*) We can manually acheive form validation but we can do the same using
+library....
+
+*) Pass function as Props in React
+==> We can.
+
+*) Can we pass a function to a Super Child Component ?
+==> Yes, we can.
+
+*) Life cycle method in React
+==> Each component in React has a lifecycle which you can monitor 
+and manipulate during its three main phases. The three phases are:
+	 1.) Mounting
+	 2.) Updating
+	 3.) Unmounting
+
+*) In the life cycle of a React component,the component has only three phases.
+But there are many methods available throughout the whole life cycle.
+
+*) Each phase of the React component lifecycle involves a set of methods that 
+are automatically called by React at specific points in time. For example, 
+during the Mounting phase, the constructor, render, and componentDidMount 
+methods are called in that order.
+
+*) constructor() is a life cycle method.It's important,when we create a 
+Component then constructor is created at first.
+Firstly "constructor()" is called and than "render()"
+we use "this" keyword to call the parent class of current class and the
+parent class is "Component" form "React" . 
